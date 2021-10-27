@@ -1,0 +1,17 @@
+--- 
+title: News Posts 
+changefreq: weekly 
+--- 
+{% include _head.html %}
+<main>
+    <h1>List of Posts</h1>
+
+    <p>This page contains a list of posts written by me, Peter Thompson. Hopefully they tell of interesting aspects of working at the forest. The posts are arranged newest to oldest.</p>
+
+    <ul class="post-list">
+        {% for post in collections.post reversed -%}
+        <li class="post-list-item"><a href="{{ post.url }}" class="post-list-link">{{ post.data.title }}</a><span class="post-date"> ~ {{ post.data.date | dateFormat }}</span></li>
+        {% endfor -%}
+    </ul>
+</main>
+{% include _foot.html %}

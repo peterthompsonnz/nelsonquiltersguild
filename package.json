@@ -1,0 +1,18 @@
+{
+  "name": "nelson-quilters-guild",
+  "version": "1.0.1",
+  "description": "A site about the Nelson Quilters Guild",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf _site && clear && npx eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": ["quilting", "nelson quilters"],
+  "author": "Peter Thompson",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "date-fns": "^2.25.0",
+    "moment-timezone": "^0.5.31"
+  }
+}
