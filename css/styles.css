@@ -31,7 +31,7 @@ body {
 
 main {
     font-size: 1rem;
-    max-width: 70ch;
+    max-width: 830px;
     padding: 1rem 1rem 5rem 1rem;
     margin: 0 auto;   
     color: var(--text-colour);    
