@@ -16,7 +16,10 @@ description: This page contains thumbnails of quilts made during the 2020 lockdo
         {%- for item in lockdown2020.data %}
         <div class="card">
           <a href="images/{{item.fileName}}" title="Click to see a bigger version of the image">
-          <img src='images/thumbs/{{item.fileName}}' alt="{{item.description}}" /> 
+          <img src='images/thumbs/{{item.fileName}}' alt="{{item.description}}" 
+          {%- if item.id > 4 %} 
+          loading="lazy"
+          {%- endif %} /> 
           </a>
           <p>{{item.description}}</p>
         </div>

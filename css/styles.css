@@ -163,6 +163,21 @@ li:not(:last-of-type) {
  margin: 0.25rem;
 }
 
+a {
+  text-decoration: none;
+  color: #0022dd;  
+  padding: 1rem 0;
+  background-color: orangered;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul li {
+ margin-bottom: 5rem; 
+}
+
 
 
 
