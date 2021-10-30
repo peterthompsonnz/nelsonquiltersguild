@@ -97,7 +97,7 @@ img {
 }
 
 li:not(:last-of-type) {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .centre {
@@ -166,17 +166,14 @@ li:not(:last-of-type) {
 a {
   text-decoration: none;
   color: #0022dd;  
-  padding: 1rem 0;
-  background-color: orangered;
+  padding: 0.25rem 0.15rem;
+  background-color: #fafafa;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-ul li {
- margin-bottom: 5rem; 
-}
 
 
 
