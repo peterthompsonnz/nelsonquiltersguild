@@ -1,5 +1,6 @@
 /node_modules
 /store
+/_site
 sitemap.njk
 postlist.njk
 robots.njk
