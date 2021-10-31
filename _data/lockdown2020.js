@@ -15,7 +15,16 @@
           {id: 9, description: 'Leah Campbell put funky fabric on the back of these so you have a choice on how to use it depending on your mood! They were begun at a Karamea Quilt weekend a few years ago.', fileName: 'leah-campbell.jpg'},          
           {id: 10, description: 'Rosalie Johnson started this magnificent work 18 months ago. It is a Wendy Williams design of cotton and wool felt with lots of embroidery and quilting.', fileName: 'rosalie-johnson.jpg'},
           {id: 11, description: 'A Kaffe Fasset fabric cushion made by Sandra Cahill. Hand quilted in pearl cotton with red velvet on the back.', fileName: 'sandra-cahill.jpg'},
-          {id: 12, description: 'Finished at last says Rosemary Mellsop who has made two of these quilts for grandchildren.', fileName: 'rosemary-mellsop1.jpg'}
+          {id: 12, description: 'Finished at last says Rosemary Mellsop who has made two of these quilts for grandchildren.', fileName: 'rosemary-mellsop1.jpg'},          
+           {id: 13, description: 'Sandra Sutcliffe has been using up her batik stash.', fileName: 'sandra-sutcliff1.jpg'},
+            {id: 14, description: '"Japanese Gifts" made from fabrics sourced from cultural gifts given to home stay families in Nelson by Japanese English Language students over the past 15 years (collected from various op shops in Nelson), plus fabric from old kimonos, and  furoshi (wrapping cloths)sourced in Japan and the tsunami wave by Robert Kaufman fabrics.', fileName: 'sandra-sutcliff3.jpg'},
+             {id: 15, description: '"Family Made Memories". Sandra made this for a friend showcasing her mother and sisters\'embroideries with a modern twist for future generational use.', fileName: 'sandra-sutcliff2.jpg'},
+             
+              {id: 16, description: 'Despite being an essential worker during lockdown Steph has been working on a number of projects.', fileName: 'stephenie-murch1.jpg'},
+              {id: 17, description: 'Steph has said it has helped keep her sane!', fileName: 'stephenie-murch2.jpg'},
+              {id: 18, description: 'Another wall hanging by Steph.', fileName: 'stephenie-murch3.jpg'},
+              {id: 19, description: 'Valerie  McNaughton\'s project made great progress during lockdown.  She is saving the hand finishing for winter.Some members may recognise the centre block as the “Pot Pourri” block used for some community quilts a while ago.', fileName: 'valarie-mcnaughton.jpg'},
+              {id: 20, description: 'Hand stitched silk tie quilt by Ruth Carlile. Many of you will remember Ruth showed us some of these blocks when she spoke to the group last July.', fileName: 'ruth-carlile.jpg'},
+              {id: 21, description: 'Zany Sheep - As part of Pat Taylor\'s big clean-up she found some panels in a semi-finished state. And then she found enough fabric to complete it! ', fileName: 'pat-taylor.jpg'},
          ]
 }
-
