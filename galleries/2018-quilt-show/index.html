@@ -1,0 +1,29 @@
+---
+title: Some Community Quilts
+description: A few examples og community quilts
+---
+
+{% include _head.html %}
+<main>
+  <section>
+    <h1 class="uppercase centre" style="font-size: 2.25rem">Some Community Quilts</h1>
+    <p>
+      This page contains thumbnails of quilts made to be distributed to people in need in the community. This is done through various organisations. <strong>Click on a thumbnail image of a quilt to see a bigger version. Click the browser's back arrow to return to this page</strong>.
+      </p>
+    <div class="card-area">
+      {%- for item in communityQuilts.data %}
+        <div class="card">
+          <a href="{{communityQuilts.imagesFolderName}}/{{item.fileName}}" title="Click to see a bigger version of the image">
+            <img src='{{communityQuilts.thumbnailsFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
+          {%- if item.id > 4 %} 
+          loading="lazy"
+          {%- endif %}/>
+          </a>
+          <p>{{item.description}}</p>
+        </div>
+      {%- endfor %}
+    </div>
+
+  </section>
+</main>
+{% include _foot.html %}
