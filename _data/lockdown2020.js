@@ -1,8 +1,8 @@
  'use strict'
  
  module.exports = {
-   imagesFolderName: 'lockdown2020',
-   thumbnailsFolderName: 'lockdown2020/thumbs',
+   imagesFolderName: 'images',
+   thumbnailsFolderName: 'images/thumbs',
    data: [
           {id: 1, description: 'Alison Paton\'s finished community quilt', fileName: 'alison1.jpg'},
           {id: 2, description: 'Quilt top for Alison\'s spare bedroom - need the shops to open to buy some backing!', fileName: 'alison2.jpg'},

@@ -147,19 +147,25 @@ main li:not(:last-of-type) {
 .card {
   max-width: 200px;
   padding: 1rem 1rem 0.15rem 1rem;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   border-radius: 6px;
   background-color: #f6f6f6;
+  align-self: start;
 }
 
 .card:hover {
+  background-color: #efefef;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   transition: 0.1s;
 }
 
 .card p {
-  font-size: 0.85rem;
-  margin: 0.25rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.card a {
+  padding: 0;
 }
 
 main a {

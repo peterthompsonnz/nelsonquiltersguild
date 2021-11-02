@@ -1,0 +1,29 @@
+---
+title: Teapot Valley Retreat 2019
+description: This page contains thumbnail images of quilts made during the workshop held at Teapot Valley in 2019
+---
+
+{% include _head.html %}
+<main>
+  <section>
+    <h1 class="uppercase centre" style="font-size: 2.25rem">Teapot Valley Retreat, 2019</h1>
+    <p>
+      This page contains thumbnail images of quilts made during the workshop held at Teapot Valley in 2019. <strong>Click on a thumbnail image of a quilt to see a bigger version. Click the browser's back arrow to return to this page</strong>.
+      </p>
+    <div class="card-area">
+      {%- for item in teapotvalley2019.data %}
+        <div class="card">
+          <a href="{{teapotvalley2019.imagesFolderName}}/{{item.fileName}}" title="Click to see a bigger version of the image">
+            <img src='{{teapotvalley2019.thumbnailsFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
+          {%- if item.id > 4 %} 
+          loading="lazy"
+          {%- endif %}/>
+          </a>
+          <p>{{item.description}}</p>         
+        </div>
+      {%- endfor %}
+    </div>
+
+  </section>
+</main>
+{% include _foot.html %}
