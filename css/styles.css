@@ -138,8 +138,7 @@ main li:not(:last-of-type) {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: top;
-  align-items: top;
+  align-items: top;  
   margin-top: 3rem;
   gap: 0.5rem;
 }
@@ -188,12 +187,19 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+  flex-wrap: wrap;
 }
 
-nav li:not(:last-of-type) {
+nav li { 
   margin-right: 1.5rem;
 }
+
+/*
+nav li:not(:last-of-type) {
+  margin-right: 1.5rem;  
+}
+* */
 
 nav a {
   text-decoration: none;
@@ -206,4 +212,17 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 490px) {
+   nav li {
+    margin-top: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+  .card-area {
+    justify-content: center;
+    gap: 1rem;
+  }
 }
