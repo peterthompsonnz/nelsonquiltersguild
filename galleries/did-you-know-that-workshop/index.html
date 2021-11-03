@@ -1,0 +1,24 @@
+---
+title: Did you know that workshop
+description: This workshop was run by Bronwyn Hamilton on Saturday 19th October. She showed those in attendance some valuable tips around looking after our tools, cutting, sewing, fabric, borders and finishing
+---
+
+{% include _head.html %}
+<main>
+  <section>
+    <h1 class="page-heading">"Did You Know That" Workshop</h1>
+    <p>
+      This workshop was run by Bronwyn Hamilton on Saturday 19th October. She showed those in attendance some valuable tips around looking after our tools, cutting, sewing, fabric, borders and finishing. Below are some pictures taken on the day. Ergonomics! Yes, No, Maybe, Look out.</strong>.
+      </p>
+    
+      {%- for item in didYouKnowThat.data %}                  
+            <img src='{{didYouKnowThat.imagesFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
+          {%- if item.lazyLoad %} 
+            loading="lazy"
+          {%- endif %}/>          
+          <p style="margin: 0.5rem 0 2rem 0;">{{item.description}}</p>        
+      {%- endfor %}
+    
+  </section>
+</main>
+{% include _foot.html %}

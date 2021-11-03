@@ -1,10 +1,14 @@
 :root {
   /* Colours */
-  --text-colour: #111111;
-  --heading-colour: var(--text-colour);
-  --background-colour: #fefefe;
-  --header-footer-background-colour: #fcfcfc;
-  --call-to-action-hover-colour: #f3e715;
+  --off-black: #111111;
+  --heading-colour: var(--off-black);
+  --white: #fff;
+  --off-white: #fefefe;
+  --off-off-white: #f5f5f5;
+  --light-gray: #e5e5e5;  
+  --mid-gray: #ccc;
+  --dark-gray: #999;
+  --light-yellow: #f2e411;
   /* Fonts */
   --georgia-serif-stack: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   --helvetica-arial-stack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -23,7 +27,7 @@ body {
   font-family: var(--helvetica-arial-stack);
   font-size: 100%;
   position: relative;
-  background: var(--background-colour);
+  background: var(--off-white);
   min-height: 100vh;
 }
 
@@ -32,7 +36,7 @@ main {
   max-width: 90ch;
   padding: 1rem 1rem 5rem 1rem;
   margin: 0 auto;
-  color: var(--text-colour);
+  color: var(--off-black);
 }
 
 p {
@@ -59,17 +63,14 @@ h3 {
   font-size: 1.25rem;
 }
 
-/* ****************** */
-
 header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  padding: 0 0 1rem 0;
-  background-color: var(--header-footer-background-colour);
-  box-shadow: 0 1px 0 #efefef;
+  width: 100%;  
+  background-color: var(--off-off-white);
+  box-shadow: 0 1px 0 var(--light-gray);  
 }
 
 footer {
@@ -78,7 +79,8 @@ footer {
   align-items: center;
   width: 100%;
   padding: 1rem 0;
-  background-color: var(--header-footer-background-colour);
+  background-color: var(--off-off-white);
+  box-shadow: 0 -1px 0 var(--light-gray);
 }
 
 footer span {
@@ -106,7 +108,7 @@ main a:hover {
 }
 
 nav {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--off-black);
   width: 100%;
 }
 
@@ -128,7 +130,7 @@ nav a {
   font-size: 1.15rem;
   padding: .25rem;
   text-decoration: none;
-  color: #fefefe;
+  color: var(--off-white);
 }
 
 nav a:hover {
@@ -145,7 +147,7 @@ nav a:hover {
   border: none;
   height: 0;
   height: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--mid-gray);
   margin: 2rem 0;
 }
 
@@ -161,16 +163,18 @@ div.call-to-action-container a {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: white;
-  background-color: #222;
+  color: var(--off-white);
+  background-color: var(--off-black);
   padding: 0.4rem 1.25rem;    
   border-radius: 3px;  
 }
 
-div.call-to-action-container a:hover {
-  color: var(--call-to-action-hover-colour);
-  box-shadow: 0 0 2px 4px var(--call-to-action-hover-colour);
-  background-color: #000;
+div.call-to-action-container a:hover {  
+  box-shadow: 0 0 2px 4px var(--light-yellow);  
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
 
 .card-area {
@@ -187,13 +191,13 @@ div.call-to-action-container a:hover {
   padding: 1rem 1rem 0.15rem 1rem;
   border: 1px solid #ddd;
   border-radius: 6px;
-  background-color: #f6f6f6;
+  background-color: var(--off-off-white);
   align-self: start;
 }
 
 .card:hover {
-  background-color: #efefef;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  background-color: var(--light-gray);
+  box-shadow: 0 0 1px 2px var(--mid-gray);
   transition: 0.1s;
 }
 
@@ -206,6 +210,19 @@ div.call-to-action-container a:hover {
   padding: 0;
 }
 
+.newsletters {
+	display: flex;
+	justify-content: space-between;
+}
+
+.newsletters section {
+	
+	padding: 1rem;
+}
+
+.newsletters section:first-of-type {
+	flex: 2;
+}
 
 
 @media screen and (max-width: 490px) {
