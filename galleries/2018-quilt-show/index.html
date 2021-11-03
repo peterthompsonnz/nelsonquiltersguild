@@ -1,20 +1,20 @@
 ---
-title: Some Community Quilts
-description: A few examples og community quilts
+title: Quilt Show, 2018
+description: A few examples of quilts from the 2018 show
 ---
 
 {% include _head.html %}
 <main>
   <section>
-    <h1 class="uppercase centre" style="font-size: 2.25rem">Some Community Quilts</h1>
+    <h1 class="uppercase centre" style="font-size: 2.25rem">2018 Quilt Show</h1>
     <p>
-      This page contains thumbnails of quilts made to be distributed to people in need in the community. This is done through various organisations. <strong>Click on a thumbnail image of a quilt to see a bigger version. Click the browser's back arrow to return to this page</strong>.
+      This page contains thumbnails of quilts that were in the Quilt Show held in 2018 at Waimea College. <strong>Click on a thumbnail image of a quilt to see a bigger version. Click the browser's back arrow to return to this page</strong>.
       </p>
     <div class="card-area">
-      {%- for item in communityQuilts.data %}
+      {%- for item in quiltShow2018.data %}
         <div class="card">
-          <a href="{{communityQuilts.imagesFolderName}}/{{item.fileName}}" title="Click to see a bigger version of the image">
-            <img src='{{communityQuilts.thumbnailsFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
+          <a href="{{quiltShow2018.imagesFolderName}}/{{item.fileName}}" title="Click to see a bigger version of the image">
+            <img src='{{quiltShow2018.thumbnailsFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
           {%- if item.id > 4 %} 
           loading="lazy"
           {%- endif %}/>
