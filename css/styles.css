@@ -4,6 +4,7 @@
   --heading-colour: var(--text-colour);
   --background-colour: #fefefe;
   --header-footer-background-colour: #fcfcfc;
+  --call-to-action-hover-colour: #f3e715;
   /* Fonts */
   --georgia-serif-stack: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   --helvetica-arial-stack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -94,16 +95,49 @@ main li:not(:last-of-type) {
   margin-bottom: 1rem;
 }
 
-.centre {
-  text-align: center;
+main a {
+  text-decoration: none;  
+  padding: 0.25rem 0.25rem;
+  display: inline-block;
 }
 
-.uppercase {
+main a:hover {
+  text-decoration: underline;  
+}
+
+nav {
+  background-color: rgb(24, 24, 24);
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-wrap: wrap;
+}
+
+nav li { 
+  margin-right: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
+  font-size: 1.15rem;
+  padding: .25rem;
+  text-decoration: none;
+  color: #fefefe;
 }
 
-.uppercase {
+nav a:hover {
+  text-decoration: underline;
+}
+
+.page-heading {
+  font-size: 2.25rem;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -115,23 +149,28 @@ main li:not(:last-of-type) {
   margin: 2rem 0;
 }
 
-.button {
-  margin: 2rem 0;
-  margin: 2rem 0;
+div.call-to-action-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;   
 }
 
-.button a {
+div.call-to-action-container a {
   text-decoration: none;
-  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
   color: white;
-  background-color: #111;
-  padding: 0.35rem 1rem;
-  padding: 0.35rem 1rem;
-  border-radius: 3px;
+  background-color: #222;
+  padding: 0.4rem 1.25rem;    
+  border-radius: 3px;  
 }
 
-.button a:hover {
-  box-shadow: 0 0 1px 2px #ccc;
+div.call-to-action-container a:hover {
+  color: var(--call-to-action-hover-colour);
+  box-shadow: 0 0 2px 4px var(--call-to-action-hover-colour);
+  background-color: #000;
 }
 
 .card-area {
@@ -167,52 +206,7 @@ main li:not(:last-of-type) {
   padding: 0;
 }
 
-main a {
-  text-decoration: none;
-  color: #0022dd;
-  padding: 0.25rem 0.15rem;
-}
 
-main a:hover {
-  text-decoration: underline;
-  background-color: #efefff;
-}
-
-nav {
-  background-color: rgb(24, 24, 24);
-  width: 100%;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  flex-wrap: wrap;
-}
-
-nav li { 
-  margin-right: 1.5rem;
-}
-
-/*
-nav li:not(:last-of-type) {
-  margin-right: 1.5rem;  
-}
-* */
-
-nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.15rem;
-  padding: .25rem;
-  text-decoration: none;
-  color: #fefefe;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
 
 @media screen and (max-width: 490px) {
    nav li {
