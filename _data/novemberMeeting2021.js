@@ -99,12 +99,15 @@
               "description":"The very surprised caterpillar",
               "fileName":"surprised-caterpillar.jpg"
            },
-           
-           
-           
-           
-           
-           
-           
+           {
+              "lazyLoad":true,
+              "description":"A flower tree",
+              "fileName":"flower-tree.jpg"
+           },
+           {
+              "lazyLoad":true,
+              "description":"Christmas is almost here",
+              "fileName":"xmas-tree.jpg"
+           },          
         ]
 }
