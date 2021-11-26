@@ -145,6 +145,11 @@ nav a:hover {
   text-transform: uppercase;
 }
 
+.site-heading-image {
+   border-radius: 0;
+   box-shadow: none;
+}
+
 .divider {
   border: none;
   height: 0;
