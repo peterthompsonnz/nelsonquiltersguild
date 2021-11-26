@@ -91,6 +91,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
 }
 
 main li:not(:last-of-type) {
@@ -197,7 +199,7 @@ div.call-to-action-container a:hover {
 
 .card:hover {
   background-color: var(--light-gray);
-  box-shadow: 0 0 1px 2px var(--mid-gray);
+  box-shadow: 0 0 1px 2px var(--light-gray);
   transition: 0.1s;
 }
 

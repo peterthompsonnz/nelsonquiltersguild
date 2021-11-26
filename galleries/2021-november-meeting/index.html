@@ -1,0 +1,62 @@
+---
+title: November 2021 Meeting
+description: This page contains a write-up of the November 2021 meeting. There are also thumbnails images of the quilts made for the challenge section of the cancelled quilt show.
+sitemapChangefreq: never
+sitemapPriority: 0.5
+---
+
+{% include _head.html %}
+<main>
+  <section>
+    <h1 class="page-heading">November 2021 Meeting</h1>
+    <p>
+      After three months of no meetings due to Covid restrictions, the Nelson Quilters Guild celebrated the end of 2021 at their meeting on Saturday 21 November at the Woodstock Centre, Stoke School.
+    </p>
+    <p>
+      There was a great attendance. Morning tea and lunch were provided. Apart from the numerous community and Show and Tell quilts there were two highlights:
+    </p>
+    <ul>
+      <li>Carolyn Henry and Val McNaughton displayed and talked about their passion with old sewing machines and their parts. They were SO knowledgeable.</li>
+      <li>The Challenge that was supposed to have been in our October show was hung and voted on. The imagination of the entrants was astounding, they were all so different.</li>
+    </ul>   
+    <p>
+      The Viewers' Choice results were:
+    </p>
+    <ul>
+      <li><b>1st, Marion Whyte</b></li>
+      <li><b>2nd, Steph Hazlitt-Black</b></li>
+      <li><b>3rd, Steph Murch</b></li>
+    </ul>
+    <p>
+      The rest of the afternoon was spent chatting and sewing. It was a great celebration after a very disrupted year.
+    </p>    
+    
+    <p>
+      <img src="images/front-table.jpg" alt="Picture of the front of the meeting showing a table with a display of old sewing machines on it and Leone addressing the members">
+      <p style="margin: 0.15rem 0 1.5rem 0;text-align:center">At the front, behind Leone, is a display of old sewing machines.</p>
+    </p>
+    <p>
+      <img src="images/audience.jpg" alt="About 40 members attended the meeting" loading="lazy">
+      <p style="margin: 0.15rem 0 1.5rem 0;text-align:center">About 40 members attended the meeting.</p>
+    </p>    
+    <p>
+    Below are thumbnail images of quilts made for the "challenge" part of the quilt show. <strong>Click on a thumbnail image of a quilt to see a bigger version. Once you have finished viewing it click the browser's back button/arrow to return to this page.</strong>
+    </p>
+    
+    <div class="card-area">
+      {%- for item in novemberMeeting2021.data %}
+        <div class="card">
+          <a href="{{novemberMeeting2021.imagesFolderName}}/{{item.fileName}}" title="Click to see a bigger version of the image">
+            <img src='{{novemberMeeting2021.thumbnailsFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
+          {%- if item.lazyLoad %} 
+            loading="lazy"
+          {%- endif %}/>
+          </a>
+          <p>{{item.description}}</p>
+        </div>
+      {%- endfor %}
+    </div>
+
+  </section>
+</main>
+{% include _foot.html %}
