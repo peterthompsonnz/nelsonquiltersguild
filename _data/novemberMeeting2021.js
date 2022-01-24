@@ -1,4 +1,4 @@
- 'use strict'
+'use strict'
  
  module.exports = {
    "imagesFolderName": "images",
@@ -21,92 +21,92 @@
            },
            {
               "lazyLoad":true,
-              "description":"Looks like this caterpillar is heading off to bed",
+              "description":"By Lyn Trolove",
               "fileName":"green-and-yellow-caterpillar.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"A happy family of Dr Seuss characters - note the LED light",
+              "description":"By Alison Paton",
               "fileName":"challenge-by-alison.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"A blue butterfly",
+              "description":"By Sandy Sixtus",
               "fileName":"blue-butterfly.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"A call to action!",
+              "description":"By Ruth Carlile",
               "fileName":"discombobulated.jpg"
            },
             {
               "lazyLoad":true,
-              "description":"Pretty flowers and fancy fish",
+              "description":"By Donna Armstrong",
               "fileName":"fish-and-flowers.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"Blue flowers, spotted leaves and words",
+              "description":"By Carolyn Henry",
               "fileName":"blue-flowers.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"A 3D jug and geometric shapes",
+              "description":"By Rosalie Johnson",
               "fileName":"jug.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"Decorations hanging from a line",
+              "description":"By Ruth Lewis",
               "fileName":"hanging-from-a-line.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"Still life with birds",
+              "description":"By Lorraine Brady",
               "fileName":"still-life.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"Colourful face with spikey hair",
+              "description":"By Barbara Nicholas",
               "fileName":"purple-face.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"Flowers in a circle",
+              "description":"By Sandra Sutcliffe",
               "fileName":"flowers-in-a-circle.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"Get vacinnated!",
+              "description":"By Valerie McNaughton",
               "fileName":"vacinnated.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"Diamonds are forever",
+              "description":"By Eileen Gordon and Chloe",
               "fileName":"diamond-shape.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"Big hair day",
+              "description":"By Lyn McCullough",
               "fileName":"big-hair.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"The world is a circle",
+              "description":"By Leslie Sumner",
               "fileName":"circles.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"The very surprised caterpillar",
+              "description":"By Donna Armstrong",
               "fileName":"surprised-caterpillar.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"A flower tree",
+              "description":"By Ruth Carlile",
               "fileName":"flower-tree.jpg"
            },
            {
               "lazyLoad":true,
-              "description":"Christmas is almost here",
+              "description":"By June Mannix",
               "fileName":"xmas-tree.jpg"
            },          
         ]
