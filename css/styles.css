@@ -88,12 +88,24 @@ footer span {
   text-align: center;
 }
 
+figure {
+  display: inline-block;
+}
+
+figcaption {
+  margin-top: 1rem; 
+  font-size: 0.9em;
+  font-style: italic; 
+  text-align: center;
+  
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
   border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
 }
 
 main li:not(:last-of-type) {
