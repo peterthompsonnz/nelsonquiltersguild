@@ -90,14 +90,14 @@ footer span {
 
 figure {
   display: inline-block;
+  margin: 1rem;
 }
 
 figcaption {
   margin-top: 1rem; 
   font-size: 0.9em;
   font-style: italic; 
-  text-align: center;
-  
+  text-align: center;  
 }
 
 img {
@@ -232,16 +232,19 @@ div.call-to-action-container a:hover {
 
 .newsletters {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;  
 }
 
-.newsletters section {
-	
+.newsletters section {	
 	padding: 1rem;
 }
 
-.newsletters section:first-of-type {
-	flex: 2;
+.left-column-newsletter, .right-column-newsletter {
+  flex: 1;
+}
+
+.right-column-newsletter ul {
+  padding-left: 2rem;
 }
 
 
