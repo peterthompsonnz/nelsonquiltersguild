@@ -89,8 +89,7 @@ footer span {
 }
 
 figure {
-  display: inline-block;
-  margin: 1rem;
+  display: inline-block;  
 }
 
 figcaption {
@@ -245,6 +244,15 @@ div.call-to-action-container a:hover {
 
 .right-column-newsletter ul {
   padding-left: 2rem;
+}
+
+.left-column-newsletter figure {    
+    margin: 1rem;  
+}
+
+#constitution-image {
+  border: 1px solid #999;
+  /* box-shadow: none; */
 }
 
 
