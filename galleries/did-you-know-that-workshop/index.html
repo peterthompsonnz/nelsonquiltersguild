@@ -13,12 +13,14 @@ sitemapPriority: 0.5
       This workshop was run by Bronwyn Hamilton on Saturday 19th October. She showed those in attendance some valuable tips around looking after our tools, cutting, sewing, fabric, borders and finishing. Below are some pictures taken on the day. Ergonomics! Yes, No, Maybe, Look out.</strong>.
       </p>
     
-      {%- for item in didYouKnowThat.data %}                  
+      {%- for item in didYouKnowThat.data %}   
+        <figure>              
             <img src='{{didYouKnowThat.imagesFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
           {%- if item.lazyLoad %} 
             loading="lazy"
           {%- endif %}/>          
-          <p style="margin: 0.5rem 0 2rem 0;">{{item.description}}</p>        
+          <figcaption>{{item.description}}</figcaption>   
+        </figure>      
       {%- endfor %}
     
   </section>
