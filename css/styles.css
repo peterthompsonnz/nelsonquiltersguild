@@ -105,7 +105,7 @@ figcaption {
   text-align: center;  
 }
 
-img {
+img, .img{
   display: block;
   max-width: 100%;
   height: auto;
@@ -255,12 +255,6 @@ div.call-to-action-container a:hover {
 .left-column-newsletter figure {    
     margin: 1rem;  
 }
-
-#constitution-image {
-  border: 1px solid #999;
-  /* box-shadow: none; */
-}
-
 
 @media screen and (max-width: 490px) {
    nav li {

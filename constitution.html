@@ -5,11 +5,24 @@ sitemapPriority: 0.5
 ---
 
 {% include _head.html %}
-<main id="constitution-main">    
-    <section>
-      <h1 class="page-heading">Image of the written Constitution</h1>    
-      <img id="constitution-image" src="/images/site/nelson-quilters-guild-constitution2.jpg" alt="Image of the written Constitution for the nelson quilters guild">
-    </section>   
+<main id="constitution-main">
+  <section>
+    <h1 class="page-heading">Picture of the written Constitution</h1>
+    <div class="img">
+      <picture>
+        <source
+          srcset="/images/site/nelson-quilters-guild-constitution_886w.png"
+        />
+        <source
+          srcset="/images/site/nelson-quilters-guild-constitution_886w.avif"
+        />
+        <img
+          src="/images/site/nelson-quilters-guild-constitution_886w.jpg"
+          alt="Image of the guild's constitution document"
+        />
+      </picture>
+    </div>
+    <!-- <img id="constitution-image" src="/images/site/nelson-quilters-guild-constitution_900w.jpg" alt="Image of the written Constitution for the nelson quilters guild"> -->
+  </section>
 </main>
 {% include _foot.html %}
-
