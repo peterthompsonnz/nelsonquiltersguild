@@ -39,12 +39,6 @@ main {
   color: var(--off-black);
 }
 
-#constitution-main {
-  max-width: 100ch;
-  display: flex;
-  justify-content: center;
-}
-
 p {
   line-height: 1.5;
 }
