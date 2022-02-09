@@ -16,9 +16,11 @@ sitemapPriority: 0.5
       {%- for item in didYouKnowThat.data %}   
         <figure>              
             <img src='{{didYouKnowThat.imagesFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
-          {%- if item.lazyLoad %} 
-            loading="lazy"
-          {%- endif %}/>          
+            width="{{item.width}}"
+            height="{{item.height}}"
+            {%- if item.lazyLoad %} 
+              loading="lazy"
+            {%- endif %}/>          
           <figcaption>{{item.description}}</figcaption>   
         </figure>      
       {%- endfor %}
