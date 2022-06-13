@@ -1,0 +1,37 @@
+---
+title: Teapot Valley Retreat 2022
+description: This page contains pictures from the Teapot Valley Retreat in June 2022.
+sitemapChangefreq: never
+sitemapPriority: 0.5
+---
+
+{% include _head.html %}
+<main>
+  <section>
+    <h1 class="page-heading">Teapot Valley Retreat 2022</h1>
+    <p>
+      On a wet and cold Winter weekend a group of enthusiastic quilters held a retreat at Teapot Valley, Nelson. Below are some pictures of creations taken during that time.
+    </p>
+    <div class="card-area">
+      {%- for item in teapotvalley2022.data %}      
+      <figure>
+        <img
+          src="{{teapotvalley2022.imagesFolderName}}/{{item.fileName}}"            
+          alt="{{item.fileName}}"
+          {%-
+          if
+          item.lazyLoad
+          %}
+          loading="lazy"
+          {%-
+          endif
+          %}
+        />
+        <!-- <figcaption></figcaption> -->
+      </figure>          
+      <!-- <p>{{item.description}}</p>       -->
+      {%- endfor %}
+    </div>
+  </section>
+</main>
+{% include _foot.html %}
