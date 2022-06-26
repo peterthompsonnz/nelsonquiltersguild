@@ -10,13 +10,15 @@ sitemapPriority: 0.5
   <section>
     <h1 class="page-heading">Teapot Valley Retreat 2022</h1>
     <p>
-      On a wet and cold Winter weekend a group of enthusiastic quilters held a retreat at Teapot Valley, Nelson. Below are pictures of some of the creations worked on.
+      On a wet and cold Winter weekend a group of enthusiastic quilters held a retreat at Teapot Valley, Nelson. Below are pictures of some of the creations that were worked on.
     </p>
     <div class="card-area">
       {%- for item in teapotvalley2022.data %}      
       <figure>
         <img
-          src="{{teapotvalley2022.imagesFolderName}}/{{item.fileName}}"            
+          src="{{teapotvalley2022.imagesFolderName}}/{{item.fileName}}"  
+          width="{{item.width}}"
+          height="{{item.height}}"          
           alt="{{item.fileName}}"
           {%-
           if
@@ -27,9 +29,8 @@ sitemapPriority: 0.5
           endif
           %}
         />
-        <!-- <figcaption></figcaption> -->
-      </figure>          
-      <!-- <p>{{item.description}}</p>       -->
+        <figcaption>{{item.description}}</figcaption>
+      </figure>      
       {%- endfor %}
     </div>
   </section>
