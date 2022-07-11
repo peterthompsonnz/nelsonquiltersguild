@@ -16,7 +16,7 @@ module.exports = {
             },
             {
                "lazyLoad":false,
-               "description":"\"Ugly\" qult",
+               "description":"\"Ugly\" quilt",
                "fileName":"community-quilts3.jpg"
             },
             {

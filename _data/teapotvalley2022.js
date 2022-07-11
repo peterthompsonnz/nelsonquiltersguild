@@ -21,6 +21,13 @@ module.exports = {
       {
          "lazyLoad": true,
          "width": 900,
+         "height": 1290,
+         "description": "By Chris Webb",
+         "fileName": "boy's-quilt.jpg"
+      },
+      {
+         "lazyLoad": true,
+         "width": 900,
          "height": 450,
          "description": "By Elizabeth Morris",
          "fileName": "squares.jpg"
@@ -29,7 +36,7 @@ module.exports = {
          "lazyLoad": true,
          "width": 900,
          "height": 589,
-         "description": "By unknown",
+         "description": "Sue Bowskill",
          "fileName": "sea-horses.jpg"
       },
       {
