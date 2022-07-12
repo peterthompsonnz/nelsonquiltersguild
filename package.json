@@ -1,6 +1,6 @@
 {
   "name": "nelson-quilters-guild",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A site about the Nelson Quilters Guild",
   "main": "index.js",
   "scripts": {
