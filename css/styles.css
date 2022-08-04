@@ -192,6 +192,10 @@ div.call-to-action-container a:hover {
   box-shadow: 0 0 2px 4px var(--light-yellow);  
 }
 
+q {
+  font-style: italic;
+}
+
 .uppercase {
 	text-transform: uppercase;
 }
@@ -250,15 +254,8 @@ div.call-to-action-container a:hover {
     margin: 1rem;  
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 1020px) {
    nav li {
     margin-top: 0.75rem;
     }
-}
-
-@media screen and (max-width: 860px) {
-  .card-area {
-    justify-content: center;
-    gap: 1rem;
-  }
 }
