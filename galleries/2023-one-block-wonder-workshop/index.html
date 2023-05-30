@@ -1,0 +1,35 @@
+---
+title: One block wonder workshop
+description: "This workshop was run by Rosalie Johnson on two Saturdays: the 20th and 27th May. She showed those in attendance some"
+sitemapChangefreq: never
+sitemapPriority: 0.5
+---
+
+{% include _head.html %}
+<main>
+  <section>
+    <h1 class="page-heading">"One Block Wonder" Workshop</h1>
+    <p>
+      This workshop was run by Rosalie Johnson on two Saturdays: the 20th and 27th May. She showed those in attendance how to use the "one-block wonder" technique to make some stunning looking quilts out of basically the same patterned piece of material by using some clever cutting and arranging techniques.
+      </p>
+      <p>
+        A <strong>one-block wonder</strong> (OBW) quilt is one composed of a kaleidoscope of hexagons or octagons [<a href="https://cdn.pixabay.com/photo/2016/12/02/13/24/hexagon-1877810__180.png">click this link to see a heaxagon shape</a>]. It uses only one fabric for the main body of the quilt. In the case of the hexagon, the chosen shape is made up of 6 equilateral triangles, which also means the three sides are equal in length. Because of this "equality" each triangle can be rotated three ways, and fitted with the other 5 into the hexagon shape. Depending on what material is used and how it is cut, some interesting patterns can be achieved. This can be seen from the images below. Note that they are not of the finished quilts - they just show how the hexagons can be arranged.</p>
+        <p>
+        To learn more about the technique visit this website: <a href="https://www.quiltinghub.com/Articles/ArticleID/654">One-Block Wonder: Hints And Techniques</a>
+      </p>     
+    
+      {%- for item in oneBlockWonder.data %}   
+        <figure>              
+            <img src='{{oneBlockWonder.imagesFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
+            width="{{item.width}}"
+            height="{{item.height}}"
+            {%- if item.lazyLoad %} 
+              loading="lazy"
+            {%- endif %}/>          
+          <figcaption>{{item.description}}</figcaption>   
+        </figure>      
+      {%- endfor %}
+    
+  </section>
+</main>
+{% include _foot.html %}
