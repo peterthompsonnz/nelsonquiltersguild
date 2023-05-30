@@ -5,59 +5,95 @@ module.exports = {
    "data":[
             {
                "lazyLoad":false,
-               "description":"Bronwyn demonstrating accurate measuring",
-               "width": 849, 
-               "height": 600,
-               "fileName":"workshop1.jpg"
+               "description":"A quilt made by Joan Inwood. This was used as an example to show what could be done",
+               "width": 800, 
+               "height": 876,
+               "fileName":"IMG_20230527_125924.jpg"
             },
             {
                "lazyLoad":true,
-               "description":"Using Ricky's quilt to explain border lengths",
-               "width": 552,
-               "height": 550,
-               "fileName":"workshop2.jpg"
-            },
-            {
-               "lazyLoad":true,
-               "description":"Cutting quilt edges before attaching the binding",
-               "width": 886, 
+               "description":"",
+               "width": 800,
                "height": 800,
-               "fileName":"workshop3.jpg"
+               "fileName":"IMG_20230527_125608.jpg"
             },
             {
                "lazyLoad":true,
-               "description":"The Flying Geese pattern cutting",
-               "width": 485,
-               "height": 529,
-               "fileName":"workshop4.jpg"
+               "description":"",
+               "width": 800, 
+               "height": 778,
+               "fileName":"IMG_20230527_123454.jpg"
             },
             {
                "lazyLoad":true,
-               "description":"Binding tips",
-               "width": 600, 
-               "height": 800,
-               "fileName":"workshop5.jpg"
+               "description":"",
+               "width": 800,
+               "height": 808,
+               "fileName":"IMG_20230527_131650.jpg"
             },
             {
                "lazyLoad":true,
-               "description":"Flying Geese",
-               "width": 451, 
-               "height": 600,
-               "fileName":"workshop6.jpg"
+               "description":"",
+               "width": 800, 
+               "height": 997,
+               "fileName":"IMG_20230527_131426.jpg"
             },
             {
                "lazyLoad":true,
-               "description":"Quarter square triangles",
-               "width": 915,
-               "height": 789,
-               "fileName":"workshop7.jpg"
+               "description":"",
+               "width": 800, 
+               "height": 889,
+               "fileName":"IMG_20230527_131317.jpg"
             },
             {
                "lazyLoad":true,
-               "description":"Half square and quarter square triangles",
-               "width": 654, 
-               "height": 800,
-               "fileName":"workshop8.jpg"
-            }
+               "description":"",
+               "width": 800,
+               "height": 845,
+               "fileName":"IMG_20230527_131013.jpg"
+            },
+            {
+               "lazyLoad":true,
+               "description":"",
+               "width": 800, 
+               "height": 840,
+               "fileName":"IMG_20230527_130321.jpg"
+            },
+            {
+               "lazyLoad":true,
+               "description":"",
+               "width": 900, 
+               "height": 662,
+               "fileName":"IMG_20230527_130235.jpg"
+            },
+            // {
+            //    "lazyLoad":true,
+            //    "description":"",
+            //    "width": 800, 
+            //    "height": 768,
+            //    "fileName":"IMG_20230527_130128.jpg"
+            // },
+            // {
+            //    "lazyLoad":true,
+            //    "description":"",
+            //    "width": 900, 
+            //    "height": 662,
+            //    "fileName":"IMG_20230527_130235.jpg"
+            // },
+            // {
+            //    "lazyLoad":true,
+            //    "description":"",
+            //    "width": 900, 
+            //    "height": 662,
+            //    "fileName":"IMG_20230527_130235.jpg"
+            // },
+            // {
+            //    "lazyLoad":true,
+            //    "description":"",
+            //    "width": 900, 
+            //    "height": 662,
+            //    "fileName":"IMG_20230527_130235.jpg"
+            // },
+            
          ]
 }
