@@ -12,6 +12,13 @@ module.exports = {
             },
             {
                "lazyLoad":true,
+               "description":"Another example. A quilt made by Geraldine Walker",
+               "width": 800, 
+               "height": 840,
+               "fileName":"IMG_20230527_130321.jpg"
+            },
+            {
+               "lazyLoad":true,
                "description":"",
                "width": 800,
                "height": 800,
@@ -51,14 +58,7 @@ module.exports = {
                "width": 800,
                "height": 845,
                "fileName":"IMG_20230527_131013.jpg"
-            },
-            {
-               "lazyLoad":true,
-               "description":"",
-               "width": 800, 
-               "height": 840,
-               "fileName":"IMG_20230527_130321.jpg"
-            },
+            },           
             {
                "lazyLoad":true,
                "description":"",
@@ -66,34 +66,34 @@ module.exports = {
                "height": 662,
                "fileName":"IMG_20230527_130235.jpg"
             },
-            // {
-            //    "lazyLoad":true,
-            //    "description":"",
-            //    "width": 800, 
-            //    "height": 768,
-            //    "fileName":"IMG_20230527_130128.jpg"
-            // },
-            // {
-            //    "lazyLoad":true,
-            //    "description":"",
-            //    "width": 900, 
-            //    "height": 662,
-            //    "fileName":"IMG_20230527_130235.jpg"
-            // },
-            // {
-            //    "lazyLoad":true,
-            //    "description":"",
-            //    "width": 900, 
-            //    "height": 662,
-            //    "fileName":"IMG_20230527_130235.jpg"
-            // },
-            // {
-            //    "lazyLoad":true,
-            //    "description":"",
-            //    "width": 900, 
-            //    "height": 662,
-            //    "fileName":"IMG_20230527_130235.jpg"
-            // },
+            {
+               "lazyLoad":true,
+               "description":"",
+               "width": 900, 
+               "height": 693,
+               "fileName":"IMG_20230527_122019.jpg"
+            },
+            {
+               "lazyLoad":true,
+               "description":"",
+               "width": 900, 
+               "height": 768,
+               "fileName":"IMG_20230527_122307.jpg"
+            },
+            {
+               "lazyLoad":true,
+               "description":"",
+               "width": 800, 
+               "height": 840,
+               "fileName":"IMG_20230527_131214.jpg"
+            },           
+            {
+               "lazyLoad":true,
+               "description":"",
+               "width": 800, 
+               "height": 768,
+               "fileName":"IMG_20230527_130128.jpg"
+            },
             
          ]
 }

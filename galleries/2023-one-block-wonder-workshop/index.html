@@ -10,14 +10,24 @@ sitemapPriority: 0.5
   <section>
     <h1 class="page-heading">"One Block Wonder" Workshop</h1>
     <p>
-      This workshop was run by Rosalie Johnson on two Saturdays: the 20th and 27th May. She showed those in attendance how to use the "one-block wonder" technique to make some stunning looking quilts out of basically the same patterned piece of material by using some clever cutting and arranging techniques.
+      This workshop was run by Rosalie Johnson over two Saturdays: the 20th and 27th May. She showed those in attendance how to use the "one-block wonder" technique to make some stunning looking quilts out of basically the same patterned piece of material by using some clever cutting and arranging techniques.
       </p>
       <p>
         A <strong>one-block wonder</strong> (OBW) quilt is one composed of a kaleidoscope of hexagons or octagons [<a href="https://cdn.pixabay.com/photo/2016/12/02/13/24/hexagon-1877810__180.png">click this link to see a heaxagon shape</a>]. It uses only one fabric for the main body of the quilt. In the case of the hexagon, the chosen shape is made up of 6 equilateral triangles, which also means the three sides are equal in length. Because of this "equality" each triangle can be rotated three ways, and fitted with the other 5 into the hexagon shape. Depending on what material is used and how it is cut, some interesting patterns can be achieved. This can be seen from the images below. Note that they are not of the finished quilts, but they show the all important arranging of the hexagons.</p>
         <p>
-        To learn more about the technique visit this website: <a href="https://www.quiltinghub.com/Articles/ArticleID/654">One-Block Wonder: Hints And Techniques</a>
-      </p>     
-    
+        To learn more about the technique visit this website: <a href="https://www.quiltinghub.com/Articles/ArticleID/654">One-Block Wonder: Hints And Techniques</a>. This YouTube video gives a good idea of how things are done and what can be achieved: <a href="https://www.youtube.com/watch?v=s3vV3Sjf4Wc">How to make a One Block Wonder Quilt</a></p>   
+      <p>
+        Here a a few pictures that show the the workshop participants at work. 
+      </p>  
+      <figure>              
+        <img src="./images/IMG_20230527_122328.jpg" alt="June and others at work doing various tasks, such as cutting out" width="800" height="658">    
+        <figcaption>June and others at work doing various tasks, such as cutting out</figcaption>    
+      </figure>
+      <figure>              
+        <img src="./images/IMG_20230527_123441.jpg" alt="Rosalie, Eileen and Roseanne planning where to put the individual blocks for best effect" width="800" height="646">  
+        <figcaption>Rosalie, Eileen and Roseanne planning where to put the individual blocks for best effect</figcaption>      
+      </figure>  
+      <p>Below are pictures of some of the quilts. The first two are finished and acted as examples for quilters to consult.</p>
       {%- for item in oneBlockWonder.data %}   
         <figure>              
             <img src='{{oneBlockWonder.imagesFolderName}}/{{item.fileName}}' alt="{{item.description}}" 
@@ -25,8 +35,10 @@ sitemapPriority: 0.5
             height="{{item.height}}"
             {%- if item.lazyLoad %} 
               loading="lazy"
-            {%- endif %}/>          
-          <figcaption>{{item.description}}</figcaption>   
+            {%- endif %}/>  
+            {%- if item.description != "" %}         
+            <figcaption>{{item.description}}</figcaption>   
+            {%- endif %}
         </figure>      
       {%- endfor %}
     
