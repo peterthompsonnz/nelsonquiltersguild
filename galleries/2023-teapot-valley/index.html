@@ -1,0 +1,70 @@
+---
+title: Teapot Valley Winter Retreat
+description: 'The annual Teapot Valley Winter retreat was held over the weekend of the 9th to the 11th of June. The weather was good and there was a good turn out of quilters'
+sitemapChangefreq: never
+sitemapPriority: 0.5
+---
+
+{% include _head.html %}
+<main>
+  <section>
+    <h1 class="page-heading">Teapot Valley Winter Retreat</h1>
+    <p>
+      The annual Teapot Valley Winter retreat was held over the weekend of the
+      9th to the 11th of June. The weather was sunny and crisp, and there was a good turn
+      out of quilters. One of whom, Debbie Williams, came from afar afield as
+      Queenstown. It was good that she did as her applique work wowed those present with its
+      wonderfull creativity.
+    </p>
+    <p>
+      Here a a few pictures from the gathering. Hopefully they give some idea
+      about the event.
+    </p>
+    <figure>
+      <img
+        src="./images/IMG_20230527_122328.jpg"
+        alt="June and others at work doing various tasks, such as cutting out"
+        width="800"
+        height="658" />
+      <figcaption>
+        June and others at work doing various tasks, such as cutting out
+      </figcaption>
+    </figure>
+    <figure>
+      <img
+        src="./images/IMG_20230527_123441.jpg"
+        alt="Rosalie, Eileen and Roseanne planning where to put the individual blocks for best effect"
+        width="800"
+        height="646" />
+      <figcaption>
+        Rosalie, Eileen and Roseanne planning where to put the individual blocks
+        for best effect
+      </figcaption>
+    </figure>
+    <p>
+      Below are pictures of some of the quilts. The first two are finished and
+      acted as examples for quilters to consult.
+    </p>
+    {%- for item in oneBlockWonder.data %}
+    <figure>
+      <img
+        src="{{oneBlockWonder.imagesFolderName}}/{{item.fileName}}"
+        alt="{{item.description}}"
+        width="{{item.width}}"
+        height="{{item.height}}"
+        {%-
+        if
+        item.lazyLoad
+        %}
+        loading="lazy"
+        {%-
+        endif
+        %} />
+      {%- if item.description != "" %}
+      <figcaption>{{item.description}}</figcaption>
+      {%- endif %}
+    </figure>
+    {%- endfor %}
+  </section>
+</main>
+{% include _foot.html %}
