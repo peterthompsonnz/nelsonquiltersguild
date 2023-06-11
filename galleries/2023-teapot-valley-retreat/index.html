@@ -12,43 +12,19 @@ sitemapPriority: 0.5
     <p>
       The annual Teapot Valley Winter retreat was held over the weekend of the
       9th to the 11th of June. The weather was sunny and crisp, and there was a good turn
-      out of quilters. One of whom, Debbie Williams, came from afar afield as
+      out of quilters. One of whom, Debbie Williams, came all the way from
       Queenstown. It was good that she did as her applique work wowed those present with its
-      wonderfull creativity.
+      wonderfull creativity. Debbie has her own website if you would like to know more about her work: <a href="http://www.quiltfever.com/">Quilt Fever</a>
     </p>
     <p>
       Here a a few pictures from the gathering. Hopefully they give some idea
-      about the event.
+      about the event. Note that pictures of Debbie's work is at the end.
     </p>
+
+    {%- for item in teapotValleyRetreat2023.data %}
     <figure>
       <img
-        src="./images/IMG_20230527_122328.jpg"
-        alt="June and others at work doing various tasks, such as cutting out"
-        width="800"
-        height="658" />
-      <figcaption>
-        June and others at work doing various tasks, such as cutting out
-      </figcaption>
-    </figure>
-    <figure>
-      <img
-        src="./images/IMG_20230527_123441.jpg"
-        alt="Rosalie, Eileen and Roseanne planning where to put the individual blocks for best effect"
-        width="800"
-        height="646" />
-      <figcaption>
-        Rosalie, Eileen and Roseanne planning where to put the individual blocks
-        for best effect
-      </figcaption>
-    </figure>
-    <p>
-      Below are pictures of some of the quilts. The first two are finished and
-      acted as examples for quilters to consult.
-    </p>
-    {%- for item in oneBlockWonder.data %}
-    <figure>
-      <img
-        src="{{oneBlockWonder.imagesFolderName}}/{{item.fileName}}"
+        src="{{teapotValleyRetreat2023.imagesFolderName}}/{{item.fileName}}"
         alt="{{item.description}}"
         width="{{item.width}}"
         height="{{item.height}}"

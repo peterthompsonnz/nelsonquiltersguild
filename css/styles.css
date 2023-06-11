@@ -11,7 +11,7 @@
   --light-yellow: #f2e411;
   /* Fonts */
   --georgia-serif-stack: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  --helvetica-arial-stack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --helvetica-arial-stack: system-ui, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 *, *::before, *::after {
@@ -117,7 +117,8 @@ main li:not(:last-of-type) {
   margin-bottom: 1rem;
 }
 
-main a {
+main a, main a:visited {
+  color: hsl(213, 99%, 35%);
   text-decoration: none;  
   padding: 0.25rem 0.25rem;
   display: inline-block;
@@ -258,6 +259,20 @@ q {
 
 .left-column-newsletter figure {    
     margin: 1rem;  
+}
+.galleries-cta {
+  font-style: italic;
+  border-radius:6px;
+  color:#222;
+  font-size:1.25rem;
+  text-align:center;
+  padding:0.75rem;
+  background-color:hsl(56, 90%, 65%);
+  border:1px solid #aaa
+}
+
+.galleries-cta a {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1020px) {
