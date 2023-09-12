@@ -3,7 +3,7 @@
   --off-black: #111111;
   --heading-colour: var(--off-black);
   --white: #fff;
-  --off-white: #fefefe;
+  --off-white: #fafafa;
   --off-off-white: #f5f5f5;
   --light-gray: #e5e5e5;  
   --mid-gray: #ccc;
@@ -27,7 +27,7 @@ body {
   font-family: var(--helvetica-arial-stack);
   font-size: 100%;
   position: relative;
-  background: var(--off-white);
+  background-color: var(--off-white);
   min-height: 100vh;
 }
 

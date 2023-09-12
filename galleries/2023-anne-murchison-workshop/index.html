@@ -1,0 +1,53 @@
+---
+title: Anne Murchison Workshop
+description: Anne came up from Christchurch to run a workshop on using Whims Watercolour templates
+sitemapChangefreq: never
+sitemapPriority: 0.5
+---
+
+{% include _head.html %}
+<main>
+  <section>
+    <h1 class="page-heading">Whims Watercolour workshop</h1>
+    <p>
+      On Saturday 9th September Anne Murchison, from Christchurch, ran an
+      all-day workshop on how to use
+      <strong>Whims Watercolor Quilt Kits</strong>. The kits are a type of
+      quilting kit that includes pre-cut fabric pieces, instructions, and
+      sometimes additional supplies like fusible fabric and a quilt grid. The
+      kits come in a variety of styles and designs, such as the Hummingbird
+      Kisses Quilt, Cactus Garden kit, Iris Garden Watercolor Quilt Kit, "Wreath
+      Of Lilacs" Watercolor Quilt Kit, and the "With All My Heart" kit.
+    </p>
+    <p>
+      The kits are designed to make the quilting process easier and more
+      accessible for beginners and experienced quilters alike. They often
+      feature easy piecing and fusible appliqué techniques. Additionally, they
+      offer a Quilt-Grid, a lightweight fusible fabric pre-marked in 2" squares
+      for use with the graph found inside your kit, which speeds up the quilt
+      making process. The kits can be purchased from the Whims website, Amazon,
+      and other quilting supply retailers.
+    </p>
+    <div>
+      {%- for item in anneMurchisonWorkshop2023.data %}
+      <div>
+        <img
+          src="{{anneMurchisonWorkshop2023.imagesFolderName}}/{{item.fileName}}"
+          width="{{item.width}}"
+          height="{{item.height}}"
+          alt="{{item.description}}"
+          {%-
+          if
+          item.lazyLoad
+          %}
+          loading="lazy"
+          {%-
+          endif
+          %}/>
+        <p style="margin-top:0.5rem;font-style: italic;">{{item.description}}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+</main>
+{% include _foot.html %}
